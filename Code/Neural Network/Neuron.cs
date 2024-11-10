@@ -7,10 +7,15 @@ public class Neuron
 {
     public int ID;
     public float value;
+    public string nodeType;
+    public bool hasIncomingConnection;
 
-    public Neuron(int ID, float value) // Ask for the neuron ID and value when an instance is created
+    // Ask for the neuron ID, value, type, and its incoming connection bool when an instance is created
+    public Neuron(int ID, float value, string nodeType, bool hasIncomingConnection)
     {
-        ID    = this.ID;
-        value = this.value;
+        ID                    = this.ID;
+        value                 = this.value;
+        nodeType              = this.nodeType;
+        hasIncomingConnection = this.hasIncomingConnection;
     }
 }

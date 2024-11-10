@@ -11,7 +11,8 @@ public class Connection
     public bool enabled;
     public int innov;
 
-    public Connection(int fromNeuronID, int toNeuronID, float weight, bool enabled, int innov) // Ask for the connection crucial variables when an instance is created
+    // Ask for the connection crucial variables when an instance is created
+    public Connection(int fromNeuronID, int toNeuronID, float weight, bool enabled, int innov)
     {
         fromNeuronID = this.fromNeuronID;
         toNeuronID   = this.toNeuronID;
